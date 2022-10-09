@@ -1,0 +1,15 @@
+ body{
+     
+      font-family: Arial, Helvetica, sans-serif;  
+}
+
+.form1{
+      margin-top: 10em;
+}
+.img-fluid{
+      background-size: cover;
+      background-image: url(/img/bg1.png);
+      background-repeat: no-repeat;
+      height: 100vh;
+      
+}
