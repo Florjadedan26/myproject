@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login&signup.css">
 </head>
 <body>
 <div class="img-fluid">
@@ -13,39 +13,29 @@
     <div class="row">
       <div class="col-md-4 offset-md-4">
         <div class="signup-form ">
-          <form class="form1 border p-4 bg-light shadow">
+
+          <form action ="phpcode/logincode.php" method= "post" class="form1 border p-4 bg-light shadow">
             <div class="text-primary">
               <h1>Wellcome</h1>
             </div>
             <div class="mb-3">
               <label for="Email" class="form-label">Email:</label>
-              <input type="email" class="form-control" id="Email" placeholder="Name@sample.com">
+              <input type="email" class="form-control" name="email" id="Email" placeholder="Name@sample.com" required>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">Password:</label>
-              <input type="password" class="form-control" id="password" placeholder="Password" >
+              <input type="password" class="form-control" name="pwd" id="password" placeholder="Password"  required>
             </div>
-            <div class="row">
-              <div class="col">
-                <div class="mb-3 form-check">
-                  <input type="checkbox" class="form-check-input" id="checkbx">
-                  <label for="checkbox" class="form-checkbox-label">Remember Me</label>
-                </div>
-              </div>
-              <div class="col">
-                <a href="" class="text-decoration-none">Forgot Password?</a>
-              </div>
-            </div>
-            
+ 
             <div class="row">
               <div class="col">
                 <div class="mb-3">
-                  <button type="submit" class="btn btn-primary"><a href="main-form.html" class="btn btn-primary">Login</a></button>
+                   <button type="submit" name="login-submit" value="login" class="btn btn-primary"><!--<a href="" class="btn btn-primary"></a>-->Login</button> 
                 </div>
               </div>
               <div class="col">
                 <div class="mb-3">
-                  <button type="button" class="btn btn-primary"><a href="#" class="btn btn-primary">Signup</a></button>
+                  <a type ="button" role="button" href="signup.php" class="btn btn-primary">Signup</a>
                 </div>
               </div>
             </div>

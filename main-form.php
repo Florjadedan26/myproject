@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -5,10 +8,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>mainform</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/mainpage.css">
 </head>
 
 <body>
+
+
 <!--navbar-->
   <Nav class="navbar fixed-top navbar-expand-lg bg-light">
     <div class="container">
@@ -27,10 +32,10 @@
       <div class="collapse navbar-collapse" id="navbartoggle">
         <ul class="navbar-nav ms-auto">
           <li class="">
-            <a class="nav-link" href="#">home</a>
+            <a class="nav-link" href="#"><span class="text-danger">Home</span></a>
           </li>
           <li class="">
-            <a class="nav-link" href="profile.html">profile</a>
+            <a class="nav-link" href="profile.php">profile</a>
           </li>
           <li class="">
             <a class="nav-link" href="#">contact us</a>
@@ -132,14 +137,14 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="500">
-        <img src="/img/sm0.png" class="d-block w-100" alt="this is a banner">
+        <img src="img/sm0.png" class="d-block w-100" alt="this is a banner">
       </div>
 
       <div class="carousel-item" data-bs-interval="500">
-        <img src="/img/sm0.png" class="img-fluid d-block w-100" alt="this is a banner">
+        <img src="img/sm0.png" class="img-fluid d-block w-100" alt="this is a banner">
       </div>
       <div class="carousel-item " data-bs-interval="500">
-        <img src="/img/sm0.png" class="d-block w-100" alt="this is a banner">
+        <img src="img/sm0.png" class="d-block w-100" alt="this is a banner">
       </div>
 
     </div>
@@ -160,7 +165,7 @@
   <div class="row gy-3">
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/tab1.jpg" class="card-img-top" alt="this is a tablet">
+          <img src="img/tab1.jpg" class="card-img-top" alt="this is a tablet">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Samsung Galaxy Tab S6 Lite</h5>
@@ -170,7 +175,7 @@
       </div>
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/tab2.jpg" class="card-img-top" alt="this is a tablet">
+          <img src="img/tab2.jpg" class="card-img-top" alt="this is a tablet">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Xiaomi Mi Pad 5 </h5>
@@ -181,7 +186,7 @@
     
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/tab3.jpg" class="card-img-top" alt="this is a tablet">
+          <img src="img/tab3.jpg" class="card-img-top" alt="this is a tablet">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Lenovo Tab P11 </h5>
@@ -192,7 +197,7 @@
 
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/tab4.jpg" class="card-img-top" alt="this is a tablet">
+          <img src="img/tab4.jpg" class="card-img-top" alt="this is a tablet">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Apple iPad 9th Generation </h5><br>
@@ -203,7 +208,7 @@
 
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/tab5.jpg" class="card-img-top" alt="this is a tablet">
+          <img src="img/tab5.jpg" class="card-img-top" alt="this is a tablet">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">OPPO Pad </h5><br>
@@ -214,7 +219,7 @@
 
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/tab6.jpg" class="card-img-top" alt="this is a tablet">
+          <img src="img/tab6.jpg" class="card-img-top" alt="this is a tablet">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Kindle Paperwhite </h5><br>
@@ -231,7 +236,7 @@
   <div class="row ">
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/cel1.jpg" class="card-img-top" alt="this is a cellphone">
+          <img src="img/cel1.jpg" class="card-img-top" alt="this is a cellphone">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Apple iPhone 11</h5>
@@ -241,7 +246,7 @@
       </div>
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/cel2.jpg" class="card-img-top" alt="this is a cellphone">
+          <img src="img/cel2.jpg" class="card-img-top" alt="this is a cellphone">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Samsung Galaxy Note10 Plus </h5>
@@ -252,7 +257,7 @@
     
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/cel3.jpg" class="card-img-top" alt="this is a cellphone">
+          <img src="img/cel3.jpg" class="card-img-top" alt="this is a cellphone">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Xiaomi Redmi Note 10 Pro </h5>
@@ -263,7 +268,7 @@
 
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/cel4.jpg" class="card-img-top" alt="this is a cellphone">
+          <img src="img/cel4.jpg" class="card-img-top" alt="this is a cellphone">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">LG V50 ThinQ 5G  </h5><br>
@@ -274,7 +279,7 @@
 
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/cel5.jpg" class="card-img-top" alt="this is a cellphone">
+          <img src="img/cel5.jpg" class="card-img-top" alt="this is a cellphone">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Infinix Note 10 Pro</h5><br>
@@ -285,7 +290,7 @@
 
       <div class="col-12 cold-md-6 col-lg-4 border p-4 bg-light shadow">
         <div class="card">
-          <img src="/img/cel6.jpg" class="card-img-top" alt="this is a cellphone">
+          <img src="img/cel6.jpg" class="card-img-top" alt="this is a cellphone">
         </div>  
         <div class="card-body mt-3">
           <h5 class="card-title">Vivo Y11  </h5><br>

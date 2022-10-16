@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!doctype html>
 <html lang="en">
 
@@ -7,46 +10,23 @@
   <title>Profile</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/profile.css">
 </head>
 
 <body>
-  <!--navbar-->
-<Nav class="navbar fixed-top navbar-expand-lg bg-light">
-    <div class="container">
-      <a href="main-form.html" class="navbar-brand d-line-block align-text-top"><span>shoppez</span> </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbartoggle"
-        aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbartoggle">
-        <ul class="navbar-nav ms-auto">
-          <li class="">
-            <a class="nav-link" href="main-form.html">home</a>
-          </li>
-          <li class="">
-            <a class="nav-link" href="#">profile</a>
-          </li>
-          <li class="">
-            <a class="nav-link" href="#">contact us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-</Nav>
-  <!--end navbar-->
+ 
   <!--profile here-->
 <div class="container ">
   <div class="row g-10">
-      <div class="col-md-4 mt-4 text-center">
+      <div class="col-md-4 mt-5 text-center">
           <div class="card">
-            <img src="/img/dum.png" class="card-img-top" alt="this is a tablet">
+            <img src="img/dum.png" class="card-img-top" alt="this is a tablet">
            
           <div class="card-body mt-3">
             <h5 class="card-title">My Account</h5>
             <p class="card-text text-danger "></p>
-            <a href="" class="btn btn-primary">Edit</a>
+            <a href="" class="btn btn-primary">Edit</a> <br>
+            <a href="main-form.php" class="btn btn-primary mt-2" >home</a>
           </div>
         </div> 
       </div><!--left side-->
@@ -64,17 +44,7 @@
                   <input type="text" id="name" class="form-control" placeholder="Enter Name" required> 
               </div>
 
-                <div class="mb-3">
-                  <label>Gender:<span class="text-danger">*</span></label>
-                <div class="form-check">  
-                  <input class="form-check-input" type="radio" name="gender" id="male">
-                  <label for="male">male</label>
-                </div>
-                <div class="form-check">       
-                  <input class="form-check-input" type="radio" name="gender" id="female">
-                  <label for="female">female</label>
-                </div>
-                </div> 
+         
 
                 <div class="mb-3">
                   <label for="email" class="form-label">Email:<span class="text-danger">*</span></label>
