@@ -1,6 +1,6 @@
 <?php
-
-include("database.php");
+  session_start();    
+  include("database.php");
 
   // login form
 
@@ -8,6 +8,7 @@ include("database.php");
  {
     $email       = $_POST['email'];
     $password    = $_POST['pwd'];
+   
 
     $mysqli = "SELECT * FROM signupuser WHERE email ='$email' && password ='$password'";
     $result = mysqli_query ($conn ,$mysqli);
@@ -19,10 +20,10 @@ include("database.php");
       header ("location:../login.php?didnotlogin");
     } else
     {
+      $_SESSION["email"]= $email;
       header ("location:../main-form.php");
       die;
     }
  
  }
-     
 

@@ -5,12 +5,14 @@ body{
 }
 
 .card img{
-   background-repeat: no-repeat;
+    background-repeat: no-repeat;
    display:block;
    margin-left: auto;
    margin-right: auto;
-   height: 30%;
-   width: 30%;
-   border-radius: 10rem;
-}
+   height: 100%;
+   width: 100%;
+   border-radius: 10rem; 
+   object-fit: cover;
+   
+} 
 

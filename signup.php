@@ -14,7 +14,7 @@
       <div class="row">
           <div class="col-md-4 offset-md-4">               
               <div class="signup-form">
-                <form action="phpcode/signupcode.php" method="post" class="mt-5 border p-4 bg-light shadow">
+                <form action="phpcode/signupcode.php" method="post" enctype="multipart/form-data" class="mt-5 border p-4 bg-light shadow">
                     <div>
                        <h1 class="text-primary">Create Account</h1>
                     </div>
@@ -59,12 +59,18 @@
                         <input type="password" class="form-control" 
                         name="pwd" id="password" placeholder="password" required >
                         <label for="password" class="form-label">Password:<span class="text-danger">*</span></label>
-                    </div> <br>
+                    </div>   <br>
+<!-- 
+                    <div class=" mb-3">      
+                         <label for="fileimg" class="form-label">profile picture:<span class="text-danger">*</span></label>
+                        <input type="file" class ="form-control  mt-3" name ="fileimg"  id="fileimg"accept = "image/jpg, image/jpeg, image/png" required> 
+                    </div> -->
+                    
+                  
 
                     <div class="mb-3">
                     <button type="submit" class="btn btn-primary" name="signup-submit" value = "Sign Up" >submit</button>  
                     </div>
-
                     <div class="mb-3 float-end">
                        <small class="form-label">&copf; shopez</small>
                      </div>

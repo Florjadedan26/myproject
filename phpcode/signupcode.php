@@ -11,7 +11,9 @@ include("database.php");
        $email       = $_POST['email'];
        $username    = $_POST['username'];
        $password    = $_POST['pwd'];
-      
+
+    
+     
        $mysql_select = "SELECT * FROM signupuser where email = '$email'"; 
        $select = mysqli_query ($conn , $mysql_select) or die (mysqli_connect_error());
        $count = mysqli_num_rows ($select); 
@@ -19,21 +21,27 @@ include("database.php");
        if ($count > 0)  
        {     
           header("location:../signup.php?invalidemail");   
-          exit();   
+          
        }
-     else if (!preg_match("/^[0-9]{11}+$/", $phonenumber))
-       {
+     else 
+       { 
+         if(!preg_match("/^[0-9]{11}+$/", $phonenumber))
+         {
           header("location:../signup.php?invalidphoneumber");   
-          exit();
-       }
-       else 
-       {
-       $mysql_insert = "INSERT INTO signupuser (firstname, lastname, address, phonenumber, email, username, password)values ('$firstname','$lastname', '$address', '$phonenumber','$email','$username','$password')";  
-       mysqli_query ($conn , $mysql_insert ) or die (mysqli_connect_error());
-       
-            header("location:../login.php"); 
-            die; 
-       }
+         
+         }
+            else
+            {  
+                 $mysql_insert = "INSERT INTO signupuser (firstname, lastname, address, phonenumber, email, username, password) values ('$firstname','$lastname', '$address', '$phonenumber','$email','$username','$password')"; 
+
+                  mysqli_query ($conn , $mysql_insert) or die (mysqli_connect_error());
+                  header("location:../login.php?success");
+             
+
+            }//second else
+
+        }//one else
+  
 
        
   }
